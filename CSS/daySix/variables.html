@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 30 and we will learn about CSS variables">
+    <title>video 30 and CSS variables</title>
+    <style>
+
+        /* here its is declared as global */
+        :root{
+            --color:rgba(152, 85, 49, 0.753);
+            --seccolor:rgb(65, 65, 125);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color:var(--color);
+            display: inline-block;
+            
+        }
+        .container{
+            background-color:var(--seccolor);
+            display: inline-block;
+        }
+
+        li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+            --color: orange;
+            background-color: var(--color, blue);
+            /* if color variable is not found then blue will be implemented */
+            /* here it is declared as local variable */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, doloribus sit libero aliquam enim rem necessitatibus qui maxime ipsum quas quisquam voluptates in? Porro distinctio iure tempore magni repudiandae maxime, expedita quidem blanditiis in eos iusto nam optio earum laborum enim, perspiciatis consequuntur? Itaque, ullam?
+    </div>
+</body>
+</html>

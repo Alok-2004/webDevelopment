@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 35 and we will learn more about Selectors">
+    <title>Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+            /* will select the first class and meke it red */
+        }
+
+        .box::first-line {
+            background-color: yellow;
+            /* this will select the first line from class box and make it yellow */
+        }
+
+        .boxes * {
+            background-color: purple;
+            border: 5px solid black;
+            /* this will be applied to all div of boxes individually */
+        }
+
+        /* Attribute selector */
+        [data-color="primary"] {
+            margin-top: 10px;
+        }
+
+        .boc:nth-child(even) {
+            background-color: white;
+        }
+        ::selection{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, placeat reprehenderit,
+            obcaecati distinctio aperiam animi quidem repellat maiores deleniti exercitationem quos necessitatibus
+            corrupti totam, velit corporis eligendi? Culpa excepturi voluptas iste provident. Numquam illo expedita
+            maxime, explicabo deserunt libero quos tempora quibusdam sequi quis hic consequuntur esse assumenda
+            <div class="box">Hey i am Box</div>
+            <div data-color="primary" class="box">Hey i am Box</div>
+        </div>
+
+</body>
+
+</html>

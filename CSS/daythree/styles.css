@@ -1,0 +1,9 @@
+/* External CSS (styles.css) */
+.external {
+    color: green;
+}
+
+/* Inline CSS */
+#inline {
+    color: red;
+}

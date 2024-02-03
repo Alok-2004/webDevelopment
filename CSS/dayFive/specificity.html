@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 21 and will look into the topic of Specificty and cascading">
+    <title>21 - Specificty</title>
+
+    <style>
+        h1{
+            color: aqua;
+        }
+
+        .yellow{
+            color: yellow;
+        }
+
+        .purple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred purple">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, esse?
+
+            <!-- here purple will be appied since it is applied in last -->
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veritatis facere ab quis quaerat et ad excepturi. Id et itaque porro eaque eum veniam.
+        </p>
+<!-- 
+    specificity
+    Inline styles have the highest specificity.
+ID selectors have a higher specificity than class selectors.
+Class selectors have a higher specificity than tag selectors.
+Universal selectors (*) have a low specificity.
+ -->
+<!-- only way to nulify inline styles is to use in browser and write and imortant at end -->
+
+<!--  
+    cascade algo
+    have three criteria to resolve any conflict
+    1. Position and order of appearence
+    2. Specificity
+    3. Origin - may a browser style
+    4. Importance - Only way to overwrite inline style
+ -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <meta name="description" content="video 17, It will all about CSS selectors">
+
+    <style>
+        /* Element selector */
+        div{
+            background-color: chartreuse;
+        }
+
+        /* class selector */
+
+        .red{
+            background-color: aqua;
+        }
+
+        /* ID selector */
+        #green{
+            background-color: brown;
+        }
+
+        /* child selector */
+        div > p{
+            background-color: chocolate;
+        }
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 
+        pseudo selector are basically used for links and are visited, active, link, hover  */
+        /* and also first child */
+        a:visited{
+            color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p>Hello </p>
+    </div>
+
+    <div class="red">
+        <p>this is class selectors</p>
+    </div>
+
+    <div id="green">
+        <p>this is ID selector</p>
+    </div>
+
+    <div>
+        <a href="https://www.google.com/"> google</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Its all about forms">
+    <title>Forms - Lets learn it </title>
+</head>
+<body>
+    <form action="post">
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name">
+        
+        
+        <div class="radio">
+                
+        <!-- Each input type="radio" represents a gender option -->
+        <!-- The name attribute groups the radio buttons together so that only one can be selected -->
+        <!-- The id attribute uniquely identifies each radio button -->
+        <!-- The value attribute specifies the value that will be sent to the server when the form is submitted -->
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <!-- Another radio button for the "Female" option -->
+        <!-- The name attribute is the same as the previous radio button, so they are part of the same group -->
+        <!-- The id attribute is unique to this radio button -->
+        <!-- The value attribute specifies the value that will be sent to the server when the form is submitted -->
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <!-- here id is being send -->
+
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" name="submitted" id="submitted" value="yes">
+            <label for="submitted">submittedthe assignment</label>
+
+        </div>
+
+        <div class="textarea">
+            <label for="first">Enter your comment</label>
+            <textarea name="Hello" id="first" cols="30" rows="10">Enetr yout comment here...</textarea>
+        </div>
+
+        <div class="select">
+            <select name="fruits" >
+                <option value="apple"> Apple </option>
+                <option value="orange"> orange </option>
+                <option value="None"> none </option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

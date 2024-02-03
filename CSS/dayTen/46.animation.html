@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 46 and we will learn about css Animation">
+    <title>Video 46</title>
+    <style>
+        .conatainer{
+            background-color: lightblue;
+            height: 80vh;
+            width: 30vw;
+            animation-name: hello1;
+
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            animation-name: hello;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            /* will tell how many time the animation will work */
+        }
+
+        @keyframes hello {
+            from{
+
+            }
+            to{
+                transform: translate(1000px);
+            }
+        }
+
+        @keyframes hello1 {
+            0%(
+                transform: rotate(100%);
+            )
+            20%(
+                transform: rotate(200%);
+            )
+            50%(
+                transform: rotate(220%);
+            )
+            80%(
+                transform: rotate(300%);
+            )
+            100%(
+                transform: rotate(310%);
+            )
+        }
+    </style>
+</head>
+<body>
+    <body class="conatainer">
+        <div class="box">
+
+        </div>
+    </body>
+</body>
+</html>

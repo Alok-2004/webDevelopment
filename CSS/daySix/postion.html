@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 28 and we will learn about posiotions">
+    <title>We Learn about Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            background-color: aqua;
+            position: absolute;
+        }
+        .box2{
+            background-color: blue;
+            position: relative;
+            top: 34px;
+            left: 56px;
+            /* we can send x, y, z index */
+        }
+        .box3{
+            background-color: blueviolet;
+        }
+        .box4{
+            background-color: chartreuse;
+        }
+
+        .box{
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        /* 
+        by default position is static
+        which means no top bottom left and right
+        */
+
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid purple;
+
+            /* transform, filter or perspetive properties can also make a element appear as positioned for the position : sticky in absence of any other position/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Static Positioning:
+
+        This is the default positioning behavior for HTML elements. Elements with static positioning are positioned according to the normal flow of the document.
+        
+        Relative Positioning:
+
+        When an element is set to position: relative;, it is positioned relative to its normal position in the document flow. This means you can use properties like top, right, bottom, and left to offset the element from its normal position without affecting the layout of other elements.
+        
+        Absolute Positioning:
+
+        Elements with position: absolute; are positioned relative to their closest positioned ancestor (i.e., an ancestor element with a position other than static). If no positioned ancestor is found, the element is positioned relative to the initial containing block (usually the viewport).
+        
+        Fixed Positioning:
+
+        Fixed positioning is similar to absolute positioning, but the element is positioned relative to the viewport, so it stays fixed in place even when the page is scrolled.
+
+        Sticky Positioning:
+
+        Elements with position: sticky; are positioned based on the user's scroll position. They behave like position: relative; within their parent elements until they reach a specified scroll position, at which point they become "sticky" and start to behave like position: fixed;.
+    
+        These positioning types can be used in combination with other CSS properties like top, right, bottom, and left to create complex layouts and designs.
+     -->
+
+     <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

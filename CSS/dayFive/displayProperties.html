@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 23 and we will learn about some display properties">
+    <title>Dispaly properties</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            /* if element is inline them padding/margin top is not activated */
+            /* to activate that use inline block in dipaly property */
+
+            /* make a block element a inline element */
+
+            display: inline-flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        I am box
+    </div>
+
+    <div class="box">
+        hello i am fine
+    </div>
+
+    <span>
+        I am good boy
+    </span>
+
+    <!-- 
+        An inline element is an element that displays on the same line as the other elements. Inline elements do not force the text after them to a new line. For example, you can put several links in a row, and they will display in a line
+
+        And other is block elment which takes whole line
+     -->
+</body>
+
+</html>

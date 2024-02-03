@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 34 and we will learn aboutshadows and outlines">
+    <title>Shadowes and outlines</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 4px solid black;
+            padding: 34px;
+            display: inline-flex;
+            justify-content: center;
+            box-shadow: 5px 15px 10px 0px green;
+
+
+            /* 
+            
+            box-shadow: h-offset v-offset blur spread color;
+            ex box-shadow: 5px 15px 10px 0px green;
+
+
+            h-offset: Horizontal offset of the shadow (positive values move the shadow to the right, negative values to the left).
+
+            v-offset: Vertical offset of the shadow (positive values move the shadow down, negative values move it up).
+            
+            blur: Optional blur radius of the shadow. The higher the value, the more blurred the shadow becomes.
+    
+            spread: Optional spread radius of the shadow. Positive values will cause the shadow to expand, negative values will cause it to shrink.
+
+            color: Color of the shadow.
+
+            inset indicates that the shadow should be an inner shadow.
+
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+            */
+
+            outline: auto;
+            /* 
+            border: Affects layout, used for visual structure.
+            outline: Doesn't affect layout, often for focus indication
+            */
+        }
+
+        .text{
+            text-shadow: 5px 3px 10px 0px purple;
+            height: 200px;
+            display: inline-flex;
+            width: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <div class="text">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium laboriosam alias magnam inventore doloremque commodi sint libero minima aliquid. Numquam quod pariatur possimus ab optio, eveniet harum id cupiditate eos. Maiores autem consectetur, ullam tempora culpa neque quae id accusantium, quod earum veniam delectus!
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 34">
+    <title>Lets learn about float and clear</title>
+    <style>
+        img{
+            float: right;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;   
+            /* to fit all elemt in the container */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .cards:nth-child(3){
+            clear: right;
+            /* it will remove any elemeent from right side of lorem134 element */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img width="220" height="160"
+                src="https://img.freepik.com/premium-photo/man-boat-is-sitting-water-sunset_777078-5683.jpg?w=900"
+                alt="Man in a boat">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti saepe corrupti earum atque! Hic mollitia minima vero reiciendis alias deserunt aspernatur quo ex quae molestiae perspiciatis veniam, exercitationem voluptatem beatae voluptatibus atque veritatis cupiditate.</p>
+        </div>
+
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eveniet et ipsum architecto. Delectus libero et molestias quam quae obcaecati non, possimus modi facere voluptatum? Illum magnam accusantium quo dicta cupiditate, atque hic accusamus perferendis earum debitis dolorem ad exercitationem, unde enim alias delectus ut molestiae mollitia impedit blanditiis iste sunt? Quas incidunt hic vitae nostrum accusamus rerum! Iure distinctio necessitatibus provident officia repellat excepturi aliquid assumenda culpa consequatur, nihil laboriosam tenetur, veniam suscipit deleniti facere illum qui ullam, aspernatur omnis? Eaque iure a explicabo quisquam repudiandae fuga officiis! Quod, a reprehenderit fugit eius odit illum ipsam fugiat expedita nulla explicabo officia optio voluptates dicta error reiciendis veritatis doloribus aliquam labore porro. Repudiandae vel perferendis nobis explicabo obcaecati provident illum incidunt unde blanditiis adipisci expedita consequuntur aliquid, molestias sapiente accusantium laudantium sint voluptatem.</div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+
+</html>

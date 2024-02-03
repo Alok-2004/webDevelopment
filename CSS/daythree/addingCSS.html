@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <meta name="description" content="video 15">
+    <style>
+        /* Internal CSS */
+        h1 {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ways of Adding CSS to HTML</h1>
+    <ol>
+        <li>
+            <strong>Internal CSS:</strong>
+            <p>Use when applying styles specific to a single page or when you have a small amount of styles that won't be reused.</p>
+            <p>Do not use for styles that need to be shared across multiple pages or for larger projects where organization is important.</p>
+        </li>
+        <li>
+            <strong>External CSS:</strong>
+            <p>Use when you want to apply styles across multiple pages or when working on a larger project that requires better organization of styles.</p>
+            <p>Do not use for styles that are only relevant to a single page or for small projects where the overhead of an external file is unnecessary.</p>
+        </li>
+        <li>
+            <strong>Inline CSS:</strong>
+            <p>Use when applying unique styles to individual elements that are not used elsewhere and when you want to override other styles.</p>
+            <p>Do not use for general styling or when the same style needs to be applied to multiple elements, as it can lead to code duplication and maintenance issues.</p>
+        </li>
+    </ol>
+    <p style="color: red;">This text is styled using inline CSS.</p>
+</body>
+</html>

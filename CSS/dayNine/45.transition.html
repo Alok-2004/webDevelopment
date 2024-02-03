@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video 45 and we will learn about transition">
+    <title>Video 45</title>
+    <style>
+        
+
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+
+            /*
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; 
+            */
+
+            transition: all 3s ease-in-out 1s;
+        }
+
+        .translate{
+            transform: translateX(11vw) translateY(10vh);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

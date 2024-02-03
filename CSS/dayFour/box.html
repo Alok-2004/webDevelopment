@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <meta name="description" content="video 18 and it will be about paddng border and margins">
+
+    <style>
+        /* to remove all the broswer's padding and margin */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            background-color: blueviolet;
+            border: 10px seagreen solid;
+            padding: 10px;
+            margin: 5px;
+            box-sizing: border-box;  /* margin is not added */
+        }
+
+        .box2{
+            background-color: red;
+            border: 10px black solid;
+            padding: 10px;
+            margin: 25px;
+            box-sizing: border-box;  /* margin is not added */
+        }
+
+        /* in margin collapse only the maxm order is added */
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        i am a box
+    </div>
+<!-- an elemnt can have multiple classes -->
+    <div class="box box2"> 
+        hello i am alok
+    </div>
+</body>
+</html>
