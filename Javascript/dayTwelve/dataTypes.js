@@ -14,7 +14,7 @@ but when using typeof on Null it will give Object
 User defined Data types
 */
 
-
+// creating object
 let o = {
     name : "Alok",
     "job role": 5600
