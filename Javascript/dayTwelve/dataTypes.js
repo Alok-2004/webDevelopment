@@ -9,7 +9,7 @@ Two types of data types
 1. Primitive datatypes
 Null, Numbers, Strings, Symbol, Undefined
 Booleans, Big int
-but when using typeof on Null it will give Object
+but when using typeof function on Null then it will give Object
 2.Object
 User defined Data types
 */

@@ -1,7 +1,7 @@
 # Web Development Practice
 
 Welcome to the web development practice repository! This repository is dedicated to helping you practice and improve your skills in web development using HTML, CSS, JavaScript, and related technologies.
-And yes for this I will be following Sigma Web Development Course by CodeWithHarry which is available Youtube.
+And yes for this I will be following Sigma Web Development Course by CodeWithHarry which is available on Youtube.
 
 ## About
 
